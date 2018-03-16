@@ -4,9 +4,9 @@
   "description": "",
   "sideEffects": false,
   "scripts": {
-    "start": "webpack-dev-server --mode development --progress --open",
-    "build": "webpack --mode production --progress",
-    "build:dev": "webpack --mode development --progress",
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
     "transpile": "babel ./dev/index.js -o ./dev/es6-lib.js",
     "test": "yarn run transpile && node ./dev/es6-lib.js",
     "stats": "yarn run stats:gen && yarn run stats:open",

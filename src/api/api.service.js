@@ -10,3 +10,7 @@ export const getApiSchema = () => {
 export function getApiUrl() {
     return API_URL;
 }
+
+export function repeatedFunctionName() {
+    return 'repeated function name';
+  }

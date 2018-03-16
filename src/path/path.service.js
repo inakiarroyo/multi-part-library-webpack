@@ -12,3 +12,7 @@ export function getUserPath(user = {}) {
 
   return path.join(getApiUrl(), safeUserID);
 }
+
+export function repeatedFunctionName() {
+  return 'repeated function name';
+}
