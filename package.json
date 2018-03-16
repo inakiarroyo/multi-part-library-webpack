@@ -1,0 +1,36 @@
+{
+  "name": "@iarroyo/multi-part-library",
+  "version": "1.0.0",
+  "description": "",
+  "sideEffects": false,
+  "scripts": {
+    "start": "webpack-dev-server --mode development --progress --open",
+    "build": "webpack --mode production --progress",
+    "build:dev": "webpack --mode development --progress",
+    "transpile": "babel ./dev/index.js -o ./dev/es6-lib.js",
+    "test": "yarn run transpile && node ./dev/es6-lib.js",
+    "stats": "yarn run stats:gen && yarn run stats:open",
+    "stats:gen": "webpack --mode production --profile --json > ./stats/stats.json",
+    "stats:open": "webpack-bundle-analyzer ./stats/stats.json --mode static --report ./stats/report.html",
+    "dev:link": "yarn run build && cd dist/ && yarn link",
+    "dev:unlink": "cd dist/ && npm unlink"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "copy-webpack-plugin": "^4.5.1",
+    "html-webpack-plugin": "^3.0.6",
+    "webpack": "^4.1.1",
+    "webpack-bundle-analyzer": "^2.11.1",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
+  }
+}

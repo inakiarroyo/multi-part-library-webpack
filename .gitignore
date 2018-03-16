@@ -1,0 +1,16 @@
+node_modules/
+.tmp
+.sass-cache
+.idea/
+.DS_Store
+*.pyc
+env/
+npm-debug.log.*
+*.log
+docker-build-temp
+coverage/
+dist/
+doc/
+stats/
+.env
+.vscode/
