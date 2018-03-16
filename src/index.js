@@ -4,6 +4,6 @@
 // export * from './path';
 // export * from './api';
 
-import * as path from './path';
-import * as api from './api';
-export { path, api };
+import * as pathLib from './path';
+import * as apiLib from './api';
+export { pathLib, apiLib };

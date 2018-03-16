@@ -14,8 +14,9 @@ var path = _interopRequireWildcard(_path);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
-console.log('\n|************ LIBS CONTENT ******|\n'); // import { API_URL, getApiUrl, getApiSchema } from '@iarroyo/multi-part-library/api';
-// import { getUserPath } from '@iarroyo/multi-part-library/path';
+var repeatedName = _multiPartLibrary.pathLib.repeatedFunctionName();
+
+console.log('\n|************ LIBS CONTENT ******|\n');
 
 console.log(lib);
 console.log(api);
@@ -30,5 +31,7 @@ console.log('getApiSchema', (0, _api.getApiSchema)());
 
 console.log('\n__PATH LOGS__');
 console.log('getUserPath', (0, _path.getUserPath)({ id: 'dummy' }));
+console.log('import_repeatedFunctionName', (0, _path.repeatedFunctionName)());
+console.log('const_repeatedFunctionName', repeatedName);
 
 console.log('\n|*******************************|\n');
