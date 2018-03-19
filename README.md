@@ -11,6 +11,6 @@ Example of how build a multi part library with Webpack
 3. Generate bundle stats
 - `yarn run demo:stats`
 
-After finish to play with example, in order to remove the `link` of the genereted libraries please execute:
+After finish to use the example, in order to remove the `link` of the genereted libraries please execute:
 4. Unbuild and clean dependencies:
 - `yarn run demo:clean`
