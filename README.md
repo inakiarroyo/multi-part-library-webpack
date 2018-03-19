@@ -1,6 +1,14 @@
 # multi-part-library-webpack
 Example of how build a multi part library with Webpack
 
+# Requirements
+`package.json` scripts running with `yarn`
+
+Example running with  
+- `node v8.9`
+- `npm v5.5.1` 
+
+
 # Steps
 1. Build the example:
 - `yarn run demo:build`
