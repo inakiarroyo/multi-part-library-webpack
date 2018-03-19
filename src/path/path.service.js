@@ -14,5 +14,5 @@ export function getUserPath(user = {}) {
 }
 
 export function repeatedFunctionName() {
-  return 'repeated function name';
+  return 'repeated function path';
 }

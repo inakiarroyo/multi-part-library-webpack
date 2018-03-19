@@ -28,6 +28,7 @@ console.log('\n__API LOGS__');
 console.log('API_URL', _api.API_URL);
 console.log('getApiUrl', (0, _api.getApiUrl)());
 console.log('getApiSchema', (0, _api.getApiSchema)());
+console.log('import_repeatedFunctionName', (0, _api.repeatedFunctionName)());
 
 console.log('\n__PATH LOGS__');
 console.log('getUserPath', (0, _path.getUserPath)({ id: 'dummy' }));

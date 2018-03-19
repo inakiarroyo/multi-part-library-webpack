@@ -2,7 +2,7 @@ import * as lib from '@iarroyo/multi-part-library';
 import * as api from '@iarroyo/multi-part-library/api';
 import * as path from '@iarroyo/multi-part-library/path';
 
-import { API_URL, getApiSchema, getApiUrl } from '@iarroyo/multi-part-library/api';
+import { API_URL, getApiSchema, getApiUrl, repeatedFunctionName as repeatedFunctionNameApi } from '@iarroyo/multi-part-library/api';
 import { getUserPath, repeatedFunctionName } from '@iarroyo/multi-part-library/path';
 
 import { pathLib } from '@iarroyo/multi-part-library';
@@ -21,6 +21,7 @@ console.log('\n__API LOGS__');
 console.log('API_URL', API_URL);
 console.log('getApiUrl', getApiUrl());
 console.log('getApiSchema', getApiSchema());
+console.log('import_repeatedFunctionName', repeatedFunctionNameApi());
 
 console.log('\n__PATH LOGS__');
 console.log('getUserPath', getUserPath({id: 'dummy'}));

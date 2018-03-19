@@ -12,5 +12,5 @@ export function getApiUrl() {
 }
 
 export function repeatedFunctionName() {
-    return 'repeated function name';
+    return 'repeated function api';
   }

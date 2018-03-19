@@ -13,7 +13,10 @@
     "stats:gen": "webpack --mode production --profile --json > ./stats/stats.json",
     "stats:open": "webpack-bundle-analyzer ./stats/stats.json --mode static --report ./stats/report.html",
     "dev:link": "yarn run build && cd dist/ && yarn link",
-    "dev:unlink": "cd dist/ && npm unlink"
+    "dev:unlink": "cd dist/ && yarn unlink",
+    "demo:build": "./scripts/build.sh",
+    "demo:test": "./scripts/test.sh",
+    "demo:clean": "./scripts/clean.sh"
   },
   "keywords": [],
   "author": "",
