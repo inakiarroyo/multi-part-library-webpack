@@ -1,4 +1,6 @@
 # multi-part-library-webpack
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/iarroyo5/multi-part-library-webpack.svg)](https://greenkeeper.io/)
 Example of how build a multi part library with Webpack
 
 # Requirements
